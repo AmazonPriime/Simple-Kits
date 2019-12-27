@@ -13,8 +13,13 @@ kits:
       - EMERALD, 5
 
 messages:
+  prefix: "[SimpleKits]"
   usage: "Command usage: /kit [kit name] or /kit list"
   permission: "You do not have permission to use this kit."
   no_kits: "There are no kits setup in the 'config.yml'."
   does_not_exist: "The specified kit does not exists, use /kit list to see available kits."
   invalid_item: "{kit}: {material} does not exist. Please make sure it is spelled and formatted correctly."
+  preview_start: "The kit contains: "
+  preview_end_repeated: "{material} x{quantity}"
+  redeemed: "You have redeemed {kit}."
+  kits_list: "Your kits: {kits}"
