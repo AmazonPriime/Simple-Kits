@@ -1,0 +1,8 @@
+name: SimpleKits
+version: 1.0-SNAPSHOT
+main: me.amazonpriime.simplekits.SimpleKits
+authors: [AmazonPriime]
+description: Very simple kits plugin.
+commands:
+  kit:
+    description: Gives a player items depending on what kit they use. Kits are defined in the configuration of the plugin.
