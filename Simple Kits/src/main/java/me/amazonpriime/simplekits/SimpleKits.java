@@ -14,17 +14,19 @@ import java.util.List;
 public final class SimpleKits extends JavaPlugin {
 
     private String[][] placeholders = {{"{kit}", ""}, {"{material}", ""}, {"{quantity}", ""}, {"{kit_list}", ""}};
-    private final String prefix = getConfig().getString("messages.prefix");
+    private String prefix;
+    private ConfigurationSection kits;
 
     @Override
     public void onEnable() {
         saveDefaultConfig();
+        prefix = getConfig().getString("messages.prefix");
+        kits = getConfig().getConfigurationSection("kits");
     }
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
-            ConfigurationSection kits = getConfig().getConfigurationSection("kits");
             Player player = (Player) sender;
             if (command.getName().equalsIgnoreCase("kit")) {
                 // if the user does not provide any arguments - send them a message about usage
@@ -66,7 +68,6 @@ public final class SimpleKits extends JavaPlugin {
 
     private boolean listArgument(ConfigurationSection kits, Player player, String[][] placeholders) {
         StringBuilder availKits = new StringBuilder();
-        player.sendMessage(kits.getKeys(false).toString());
         for (String kitName : kits.getKeys(false)) {
             if (availKits.length() == 0) { availKits.append(kitName); continue; }
             availKits.append(", ").append(kitName);
@@ -86,9 +87,8 @@ public final class SimpleKits extends JavaPlugin {
                 return infoMessage("messages.invalid_item", player, placeholders);
             } else {
                 player.getInventory().addItem(new ItemStack(item, Integer.parseInt(itemArray[1])));
-                return !infoMessage("messages.redeemed", player, placeholders);
             }
         }
-        return true;
+        return !infoMessage("messages.redeemed", player, placeholders);
     }
 }
