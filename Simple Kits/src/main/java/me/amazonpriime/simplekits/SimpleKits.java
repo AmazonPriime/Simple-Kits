@@ -39,6 +39,15 @@ public final class SimpleKits extends JavaPlugin {
                 // if there are no kits defined in the config - send them a message saying no kits are defined
                 if (kits == null) { return infoMessage("messages.no_kits", player); }
 
+                // if player uses preview argument then show the user the contents of kit as long as they have permission
+                if (args.length == 2 && args[1].equalsIgnoreCase("preview") && player.hasPermission("simplekits.kit.preview")) {
+                    if (kits.contains(args[0]) && player.hasPermission("simplekits.kit." + args[0].toLowerCase())) {
+                        return previewKit(args[0], player);
+                    }
+                    if (!player.hasPermission("simplekits.kit." + args[0].toLowerCase())) { return infoMessage("messages.no_permission", player); }
+                    return infoMessage("messages.does_not_exist", player);
+                }
+
                 // if the kit the user specifies in their argument exists then give them the items
                 if (kits.contains(args[0]) && player.hasPermission("simplekits.kit." + args[0].toLowerCase())) {
                     placeholders[0][1] = args[0];
@@ -48,7 +57,7 @@ public final class SimpleKits extends JavaPlugin {
                 }
 
                 // if none of the other conditionals triggered a return statement it means no permission
-                return infoMessage("message.no_permission", player);
+                return infoMessage("messages.no_permission", player);
             }
             // if the command used it kits then it will display a list of kits
             if (command.getName().equalsIgnoreCase("kits")) {
@@ -95,5 +104,29 @@ public final class SimpleKits extends JavaPlugin {
             }
         }
         return !infoMessage("messages.redeemed", player);
+    }
+
+    private boolean previewKit(String kit, Player player) {
+        List<String> kitItems = getConfig().getStringList("kits." + kit + ".items");
+        StringBuilder kitDetails = new StringBuilder();
+        kitDetails.append(prefix).append(" ").append(getConfig().getString("messages.preview_start"));
+        int stringLength = kitDetails.length();
+        for (String itemDetails : kitItems) {
+            String[] itemArray = itemDetails.split(", ");
+            Material item = Material.getMaterial(itemArray[0]);
+            placeholders[1][1] = itemArray[0];
+            placeholders[2][1] = itemArray[1];
+            if (item == null) {
+                return infoMessage("messages.invalid_item", player);
+            } else {
+                String text = getConfig().getString("messages.preview_end_repeated");
+                text = text.replace(placeholders[1][0], placeholders[1][1]).replace(placeholders[2][0], placeholders[2][1]);
+                System.out.println(kitDetails.length());
+                if (kitDetails.length() == stringLength) { kitDetails.append(text); continue; }
+                kitDetails.append(", ").append(text);
+            }
+        }
+        player.sendMessage(ChatColor.translateAlternateColorCodes('&', kitDetails.toString()));
+        return true;
     }
 }
