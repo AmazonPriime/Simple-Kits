@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c91c19-2c15-4762-9dc5-2e3a9102563b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/amazonpriime/simplekits/SimpleKits.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/amazonpriime/simplekits/SimpleKits.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/amazonpriime/simplekits/SimpleKits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/amazonpriime/simplekits/SimpleKits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +81,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
   </component>
   <component name="RunManager" selected="Gradle.Simple Kits [jar]">
     <configuration name="Simple Kits [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -102,6 +96,25 @@
         <option name="taskNames">
           <list>
             <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Simple Kits [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testClasses" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -130,6 +143,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Simple Kits [testClasses]" />
         <item itemvalue="Gradle.Simple Kits [jar]" />
       </list>
     </recent_temporary>
@@ -157,7 +171,9 @@
       <option name="presentableId" value="Default" />
       <updated>1577398550590</updated>
       <workItem from="1577398553357" duration="6095000" />
-      <workItem from="1577410549606" duration="14411000" />
+      <workItem from="1577410549606" duration="14731000" />
+      <workItem from="1577567120289" duration="636000" />
+      <workItem from="1577574746986" duration="6092000" />
     </task>
     <servers />
   </component>
@@ -169,21 +185,29 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="669" y="421" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1177@0.23.1920.1177" timestamp="1577415988386" />
-    <state width="1878" height="208" key="GridCell.Tab.0.bottom" timestamp="1577442213483">
+    <state width="1878" height="208" key="GridCell.Tab.0.bottom" timestamp="1577586938464">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="208" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1577442213483" />
-    <state width="1878" height="208" key="GridCell.Tab.0.center" timestamp="1577442213483">
+    <state width="1878" height="208" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1577586938464" />
+    <state width="1878" height="208" key="GridCell.Tab.0.center" timestamp="1577586938463">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="208" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1577442213483" />
-    <state width="1878" height="208" key="GridCell.Tab.0.left" timestamp="1577442213482">
+    <state width="1878" height="208" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1577586938463" />
+    <state width="1878" height="208" key="GridCell.Tab.0.left" timestamp="1577586938462">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="208" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1577442213482" />
-    <state width="1878" height="208" key="GridCell.Tab.0.right" timestamp="1577442213483">
+    <state width="1878" height="208" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1577586938462" />
+    <state width="1878" height="208" key="GridCell.Tab.0.right" timestamp="1577586938464">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="208" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1577442213483" />
+    <state width="1878" height="208" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1577586938464" />
+    <state x="461" y="250" key="SettingsEditor" timestamp="1577579053802">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="461" y="250" key="SettingsEditor/0.23.1920.1177@0.23.1920.1177" timestamp="1577579053802" />
+    <state x="625" y="288" width="670" height="676" key="search.everywhere.popup" timestamp="1577586274143">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="625" y="288" width="670" height="676" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1577586274143" />
   </component>
 </project>

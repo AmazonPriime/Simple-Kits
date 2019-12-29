@@ -23,3 +23,4 @@ messages:
   preview_end_repeated: "{material} x{quantity}"
   redeemed: "You have redeemed {kit}."
   kits_list: "Your kits: {kit_list}"
+  no_permission: "You do not have permission to use the command: '{command}'."

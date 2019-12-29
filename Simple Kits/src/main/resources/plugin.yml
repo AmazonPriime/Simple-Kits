@@ -5,4 +5,6 @@ authors: [AmazonPriime]
 description: Very simple kits plugin.
 commands:
   kit:
-    description: Gives a player items depending on what kit they use. Kits are defined in the configuration of the plugin.
+    description: Gives a player items depending on what kit they use.
+  kits:
+    description: Gives a player a list of the kits available to them.
