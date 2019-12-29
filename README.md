@@ -10,4 +10,4 @@ Simple plugin which allows for very simple kits on a Minecraft server. These kit
 * Timed delay between the usage of kits
 * Allow for more customisability of the items in the kits: enchantments, name and lore
 * ~~Add permissions so that players can only use kits they have permission for~~
-* Preview command that lists the contents of the kit
+* ~~Preview command that lists the contents of the kit~~
