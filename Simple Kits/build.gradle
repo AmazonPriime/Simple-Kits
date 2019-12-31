@@ -1,20 +1,17 @@
-apply plugin: 'java'
+plugins {
+    id 'java'
+}
 
 group = pluginGroup
 version = pluginVersion
 
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
     mavenCentral()
     maven {
-        name = 'spigotmc-repo'
-        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
-    }
-    maven {
-        name = 'sonatype'
-        url = 'https://oss.sonatype.org/content/groups/public/'
+        url = "https://papermc.io/repo/repository/maven-public/"
     }
 }
 
